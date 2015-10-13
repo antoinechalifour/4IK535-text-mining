@@ -1,0 +1,14 @@
+{
+  "name": "tweets-collection-preparation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "antoinechalifour <antoine.chalifour@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "twit": "^2.1.0"
+  }
+}
