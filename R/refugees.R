@@ -16,7 +16,7 @@ computeSentiment <- function(country, countryCode){
   # Text is in tweets$text 
   tweets <- read.csv(file, header = TRUE, sep = ",")
   
-  # Loads positive and negative words
+  # Loads positive and negative words 
   pos <- scan(posFile, what = "character", comment.char = ";")
   neg <- scan(negFile, what = "character", comment.char = ";")
   
@@ -62,10 +62,10 @@ france <- computeSentiment('french', 'fr')
 hist(france$sentiment$score, xlab = "Sentiment")
 frMean <- mean(france$sentiment$score)
 frSd <- sd(france$sentiment$score)
-frFreqWords <- computeFrequentTerms(france$dataframe, 200)
+frFreqWords <- computeFrequentTerms(france$dataframe, 150)
 
 germany <- computeSentiment('german', 'de')
 hist(germany$sentiment$score, xlab = "Sentiment")
 deMean <- mean(germany$sentiment$score)
 deSd <- sd(germany$sentiment$score)
-deFreqWords <- computeFrequentTerms(germany$dataframe, 50)
+deFreqWords <- computeFrequentTerms(germany$dataframe, 30)
